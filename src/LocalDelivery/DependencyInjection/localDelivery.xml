@@ -18,6 +18,10 @@
             <tag name="shopware.entity.definition" entity="delivery_route"/>
         </service>
 
+        <service id="Shopware\Production\LocalDelivery\MapApiRequestLimiter\MapApiRequestLimiterDefinition">
+            <tag name="shopware.entity.definition" entity="map_api_request_limiter"/>
+        </service>
+
 <!--        Controllers-->
         <service id="Shopware\Production\LocalDelivery\DeliveryRoute\Api\DeliveryRouteController" public="true">
             <argument type="service" id="Shopware\Production\LocalDelivery\DeliveryRoute\Services\DeliveryRouteService"/>
